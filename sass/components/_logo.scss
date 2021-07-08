@@ -1,0 +1,37 @@
+.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  text-decoration: none;
+
+  color: var(--accent-color);
+}
+
+.nav__logo {
+  display: block;
+  margin-right: 93px;
+
+  &--color-black {
+    color: var(--black-logo);
+  }
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+
+  color: var(--accent-color);
+
+  &--color-white {
+    color: var(--white-color);
+  }
+}
