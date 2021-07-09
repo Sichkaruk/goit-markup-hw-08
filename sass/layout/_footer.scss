@@ -1,28 +1,39 @@
 .footer {
-  display: block;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   background: var(--dark-grey);
 
-  &-container {
-    display: flex;
-    align-items: baseline;
-  }
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-  &__title {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-color);
-  }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  &__icon {
-    fill: var(--white-color);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+      align-items: baseline;
+    }
   }
+}
+.footer__title {
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.footer__icon {
+  fill: var(--white-color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts {
@@ -33,7 +44,17 @@
   color: rgba(33, 150, 243, 0.9);
 
   &__item {
-    margin-bottom: 9px;
+    @media screen and (max-width: 1199px) {
+      &:nth-child(1) {
+        margin-bottom: 8px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      &:nth-child(1) {
+        margin-bottom: 9px;
+      }
+    }
   }
 
   &__item:last-child {
@@ -41,10 +62,9 @@
   }
 
   &__link {
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
-    line-height: 1.714;
+    line-height: 1.171;
+    letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -57,55 +77,87 @@
 }
 
 .address-box {
-  display: block;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+
+  .address {
+    margin-bottom: 8px;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--white-color);
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
+  }
 }
 
-.address {
-  margin-bottom: 9px;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--white-color);
+.footer .social-list {
+  padding: 0;
 }
 .social-box {
-  margin-left: 70px;
-  width: 206px;
-  height: 80px;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
 }
 
 .subscribe-box {
-  margin-left: 93px;
-  margin-top: 12px;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--white-color);
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .subscribe-form {
   display: flex;
 
-  width: 570px;
-  height: 86px;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__input {
-    width: 358px;
-    height: 50px;
-    margin-top: 20px;
-    margin-right: 12px;
-    padding: 15px 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
 
-    background-color: var(--dark-grey);
-    color: rgba(255, 255, 255, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
     border-radius: 4px;
-    outline: none;
+    background-color: transparent;
+
+    color: var(--white-color);
+
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
   }
 }
