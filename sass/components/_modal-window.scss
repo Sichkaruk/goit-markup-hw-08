@@ -187,7 +187,7 @@
   cursor: pointer;
 
   @media screen and (min-width: 1200px) {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.714;
   }
 
@@ -227,4 +227,10 @@
 
     color: var(--accent-color);
   }
+}
+
+.checkbox-text {
+  font-size: 12px;
+  line-height: 1.667;
+  letter-spacing: 0.03em;
 }
