@@ -17,7 +17,7 @@
     ],
     "liveSassCompile.settings.generateMap": true,
     "liveServer.settings.port": 7775,
-    // "liveSassCompile.settings.autoprefix": null
+    "liveSassCompile.settings.autoprefix": null
 }
     "bracketPairColorizer.consecutivePairColors": [
         [
