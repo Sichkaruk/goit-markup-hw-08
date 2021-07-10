@@ -405,10 +405,6 @@ body {
   }
 }
 
-.portfolio-buttons__item {
-  margin-bottom: 15px;
-}
-
 .portfolio-buttons__button {
   padding: 6px 22px;
   font-weight: 500;
@@ -752,7 +748,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .modal-policy {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.714;
   }
 }
@@ -1082,7 +1078,7 @@ body {
 
 .feature-list__title {
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.143;
