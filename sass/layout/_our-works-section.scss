@@ -1,0 +1,52 @@
+@media screen and (max-width: 1199px) {
+  .our-work-section {
+    display: none;
+  }
+}
+
+.our-work-section {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+.our-work-list {
+  display: flex;
+  margin-left: 0;
+
+  &__item {
+    display: block;
+    position: relative;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__img {
+    display: block;
+    width: 370px;
+  }
+
+  &__description.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
